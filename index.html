@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./src/js/qrcode.js" defer></script>
+    <script type="text/javascript" src="./src/js/qrcode.min.js" defer></script>
+    <script src="./src/js/script.js" defer></script>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>QR Client Manager</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="app flex">
+          <div class="logo">
+            <img src="./asset/logo.png" alt="logo" />
+          </div>
+          <div class="input-container" id="main__div--inputContainer">
+            <div class="input-data">
+              <label for="user-name">First Name</label>
+              <input type="text" name="name" id="first-name" />
+              <div class="error error-first--name"></div>
+            </div>
+            <div class="input-data">
+              <label for="user-name">Last Name</label>
+              <input type="text" name="name" id="last-name" />
+            </div>
+            <div class="error error-last--name"></div>
+            <div class="input-data">
+              <label for="user-email">Email</label>
+              <input type="email" name="email" id="user-email" />
+              <div class="error error-email"></div>
+            </div>
+            <div class="input-data">
+              <label for="user-twitter">Twitter</label>
+              <input type="text" name="twitter" id="user-twitter" />
+              <div class="error error-twitter"></div>
+            </div>
+            <div class="input-data">
+              <label for="user-github">GitHub</label>
+              <input type="text" name="twitter" id="user-github" />
+            </div>
+          </div>
+          <!-- CARD PROFILE SECTION -->
+          <div class="card-panel hidden"></div>
+          <!-- QR CODE IMAGE SECTION -->
+          <div class="qr-code">
+            <p class="qr-code-msg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="qr-code--small--image"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                /></svg
+              >QR CODE will display here
+            </p>
+            <div id="qrcode"></div>
+            <div class="btn">
+              <button type="button" id="btn-create" class="btn-code btn-grad">
+                Create
+              </button>
+              <button type="button" id="btn-cancel" class="btn-code btn-grad">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

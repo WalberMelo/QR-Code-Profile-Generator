@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font: 18px;
+}
+
+/* GENERAL */
+
+.main-container {
+  position: relative;
+}
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 4%);
+  padding: 0.5em 1.5em;
+  border: 1px solid black;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  border-radius: 10px;
+
+  background: -webkit-linear-gradient(200deg, #ffffff, hsl(40, 23%, 97%));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(160deg, #ffffff, hsl(40, 23%, 97%));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > img {
+  width: 170px;
+  height: 170px;
+  margin: 1.5em;
+  border-radius: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-image: linear-gradient(
+    0deg,
+    #6441a5 0%,
+    #4f1082 51%,
+    #6441a5 100%
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.064);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+/* CARD */
+
+.hidden {
+  display: none;
+}
+
+input {
+  padding: 0.4em;
+}
+.input-data {
+  color: #4f1082;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5em;
+}
+
+.card-panel {
+  line-height: 1.5;
+}
+
+.twitter-img,
+.github-img {
+  width: 15px;
+}
+
+.qr-code {
+  border-radius: 4px;
+  margin-top: 1em;
+  padding-bottom: 2em;
+}
+
+.qr-code--small--image {
+  margin-right: 10px;
+  height: 20px;
+}
+.qr-code-msg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#qrcode {
+  padding: 1.5em;
+}
+
+/* BUTTONS */
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #6441a5 0%,
+    #2a0845 51%,
+    #6441a5 100%
+  );
+}
+.btn-grad {
+  font-size: 16px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(147, 147, 147);
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
