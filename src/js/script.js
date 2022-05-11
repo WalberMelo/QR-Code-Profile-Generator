@@ -162,6 +162,7 @@ function makeCard() {
   cardPanel.appendChild(cardTwitterEl);
   cardPanel.appendChild(cardGitHubEl);
 }
+
 /* Remove display card */
 function removeProfile() {
   let profileNode = document.querySelectorAll(".card-panel > p");
@@ -209,3 +210,5 @@ btnCancel.addEventListener("click", function () {
   removeCode();
   removeProfile();
 });
+
+export { userData };
