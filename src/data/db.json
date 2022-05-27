@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Walber",
+      "lastName": "Melo",
+      "userEmail": "dev4wm@gmail.com",
+      "userGitHub": "walbermelo",
+      "userTwitter": "@walber_melo",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "firstName": "Miguel",
+      "lastName": "Dominguez",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

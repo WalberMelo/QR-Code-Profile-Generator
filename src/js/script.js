@@ -28,6 +28,8 @@ const btnCancel = document.getElementById("btn-cancel");
 
 //Store the user input data
 let userData = {};
+const fetchData = fetch("http://localhost:3000/posts");
+fetchData.then((response) => response.json()).then((data) => console.log(data));
 
 //Global variable
 let firstNameRequiredError = false;
@@ -161,6 +163,7 @@ function makeCard() {
   cardPanel.appendChild(cardEmailEl);
   cardPanel.appendChild(cardTwitterEl);
   cardPanel.appendChild(cardGitHubEl);
+  console.log(userData);
 }
 
 /* Remove display card */
@@ -211,4 +214,4 @@ btnCancel.addEventListener("click", function () {
   removeProfile();
 });
 
-export { userData };
+//export { userData };

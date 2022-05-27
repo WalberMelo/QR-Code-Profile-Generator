@@ -1,0 +1,24 @@
+{
+  "name": "qr-client-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch ./src/data/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalberMelo/QR-Code-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WalberMelo/QR-Code-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/WalberMelo/QR-Code-Profile-Generator#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
